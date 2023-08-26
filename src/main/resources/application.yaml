@@ -1,0 +1,3 @@
+fcm:
+  firebase:
+    service-account: classpath:firebase-service-account1.json
