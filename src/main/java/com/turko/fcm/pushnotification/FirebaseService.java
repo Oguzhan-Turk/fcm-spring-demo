@@ -22,7 +22,7 @@ public class FirebaseService {
         try {
             return firebaseMessaging.send(message);
         } catch (FirebaseMessagingException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error sending notification: " + e.getMessage(), e);
         }
     }
 }
